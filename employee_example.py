@@ -1,0 +1,13 @@
+import pandas as pd
+df = pd.read_csv('employee_data.csv')
+print(df)
+print(df.head())
+print(df.tail())
+print(df.columns)
+print(df.shape)
+print(df.info())
+print(df.describe())
+print(df[0:3])
+print(df[df['Dep_name']=="IT"])
+print(df[df['Age']>19])
+print(df[df['Experience']>3])
